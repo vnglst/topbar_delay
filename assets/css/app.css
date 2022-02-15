@@ -1,6 +1,20 @@
 /* This file is for your main application CSS */
 @import "./phoenix.css";
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.topbar {
+  transform: translateY(-10px);
+  animation: slideIn 125ms linear 125ms forwards;
+}
+
 /* Alerts and form errors used by phx.new */
 .alert {
   padding: 15px;
